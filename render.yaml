@@ -1,0 +1,14 @@
+# Blueprint opcional do Render (New > Blueprint). Também dá para criar o Web Service manualmente.
+services:
+  - type: web
+    name: medlink-api
+    runtime: docker
+    plan: free
+    healthCheckPath: /especialidades
+    envVars:
+      - key: DB_URL
+        value: jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL
+      - key: DB_USER
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
