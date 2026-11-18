@@ -11,10 +11,6 @@ import jakarta.validation.constraints.Size;
 
 import java.util.Arrays;
 
-/**
- * Clínica parceira. Além dos dados cadastrais, guarda os parâmetros
- * configuráveis que definem qual método de distribuição será usado.
- */
 public class Clinica {
 
     private Long id;

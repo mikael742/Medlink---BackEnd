@@ -54,7 +54,6 @@ public class OfertaDAO extends BaseDAO {
         return o;
     }
 
-    /** Atualiza a resposta da oferta (aceite, recusa ou expiração). */
     public boolean atualizarResposta(Oferta o) {
         String sql = "UPDATE MDL_OFERTA SET STATUS=?, DATA_RESPOSTA=?, ID_CONSULTA_GERADA=?, DIAS_ANTECIPADOS=? WHERE ID=?";
         return executar(sql, ps -> {

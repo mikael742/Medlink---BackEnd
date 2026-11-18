@@ -10,10 +10,7 @@ import jakarta.validation.constraints.NotNull;
 import java.time.Duration;
 import java.time.LocalDateTime;
 
-/**
- * Consulta da agenda. Quando é cancelada, ela passa a representar uma
- * "vaga" que o Medlink tenta preencher com outro paciente.
- */
+
 public class Consulta {
 
     private Long id;

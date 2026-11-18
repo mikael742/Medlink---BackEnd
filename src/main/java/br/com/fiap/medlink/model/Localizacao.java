@@ -2,11 +2,7 @@ package br.com.fiap.medlink.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-/**
- * Objeto de valor (Value Object) que representa uma localização aproximada:
- * CEP + coordenadas. Não exige localização em tempo real — as coordenadas
- * podem ser as do CEP/bairro informado pelo paciente.
- */
+
 public class Localizacao {
 
     private static final double RAIO_TERRA_KM = 6371.0;

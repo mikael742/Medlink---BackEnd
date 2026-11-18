@@ -4,7 +4,6 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 
-/** Superclasse com os dados comuns a pacientes e profissionais de saúde. */
 public abstract class Pessoa {
 
     protected Long id;

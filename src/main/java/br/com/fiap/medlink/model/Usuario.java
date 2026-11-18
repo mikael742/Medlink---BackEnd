@@ -5,10 +5,6 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import java.time.LocalDateTime;
 
-/**
- * Conta de acesso. Cada usuário é OU um paciente OU uma clínica.
- * A senha nunca é guardada: só o hash (PBKDF2) e o salt.
- */
 public class Usuario {
 
     private Long id;

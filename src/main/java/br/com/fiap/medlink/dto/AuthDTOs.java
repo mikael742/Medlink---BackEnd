@@ -9,7 +9,7 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
-/** Objetos de entrada e saída do login e do cadastro de contas. */
+
 public final class AuthDTOs {
 
     private AuthDTOs() {

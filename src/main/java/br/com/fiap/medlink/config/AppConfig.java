@@ -13,13 +13,12 @@ import java.time.ZoneId;
 @Configuration
 public class AppConfig implements WebMvcConfigurer {
 
-    /** Relógio único da aplicação (fuso de Brasília). Facilita testes e evita diferença de fuso no deploy. */
+    /** Relógio da aplicação (fuso de Brasília) */
     @Bean
     public Clock clock() {
         return Clock.system(ZoneId.of("America/Sao_Paulo"));
     }
 
-    /** Libera o acesso da API pelo front-end (outra origem). */
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")

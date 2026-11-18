@@ -4,7 +4,6 @@ import br.com.fiap.medlink.model.enums.MetodoDistribuicao;
 
 import java.util.Map;
 
-/** Indicadores de resultado do Medlink para uma clínica (seção 8 da proposta). */
 public record Indicadores(
         Long idClinica,
         String nomeClinica,

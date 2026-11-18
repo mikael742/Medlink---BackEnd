@@ -15,14 +15,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-/**
- * Classe base dos DAOs. Centraliza o acesso JDBC: obtenção/liberação da
- * conexão, execução de PreparedStatements e conversão de tipos.
- *
- * A conexão é obtida com DataSourceUtils para participar das transações
- * abertas pelos BOs (@Transactional): se um BO faz várias operações,
- * todas usam a mesma conexão e são confirmadas (ou desfeitas) juntas.
- */
 public abstract class BaseDAO {
 
     protected final DataSource dataSource;

@@ -15,11 +15,7 @@ import java.util.EnumSet;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-/**
- * Registro do paciente na lista de interesse: "quero uma consulta desta
- * especialidade, nestes dias e horários". Opcionalmente aponta para uma
- * consulta que ele já tem e deseja antecipar.
- */
+
 public class InteresseConsulta {
 
     private Long id;

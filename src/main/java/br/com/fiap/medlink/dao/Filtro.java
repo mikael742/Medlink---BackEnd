@@ -5,16 +5,11 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Monta cláusulas WHERE dinâmicas apenas com os filtros informados,
- * mantendo os valores como parâmetros do PreparedStatement (sem SQL injection).
- */
 class Filtro {
 
     private final List<String> condicoes = new ArrayList<>();
     private final List<Object> valores = new ArrayList<>();
 
-    /** Adiciona a condição somente se o valor não for nulo. */
     Filtro se(Object valor, String condicao) {
         if (valor != null) {
             condicoes.add(condicao);

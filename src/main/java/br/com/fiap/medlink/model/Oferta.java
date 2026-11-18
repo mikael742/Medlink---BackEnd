@@ -7,10 +7,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import java.time.LocalDateTime;
 
-/**
- * Oferta de uma vaga (consulta cancelada) para um paciente da lista de interesse.
- * Cada vaga tem no máximo uma oferta PENDENTE por vez.
- */
+
 public class Oferta {
 
     private Long id;

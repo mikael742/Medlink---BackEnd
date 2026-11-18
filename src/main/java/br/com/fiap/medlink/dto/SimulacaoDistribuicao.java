@@ -6,10 +6,7 @@ import br.com.fiap.medlink.model.enums.MetodoDistribuicao;
 import java.time.LocalDateTime;
 import java.util.List;
 
-/**
- * Mostra como o Medlink distribuiria uma vaga, sem enviar oferta:
- * o método escolhido, o ranking dos candidatos e quem ficou de fora (e por quê).
- */
+
 public record SimulacaoDistribuicao(
         Long idVaga,
         LocalDateTime dataHoraVaga,
