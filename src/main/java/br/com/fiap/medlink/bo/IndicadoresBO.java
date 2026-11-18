@@ -17,7 +17,7 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.OptionalDouble;
 
-/** Calcula os indicadores que mostram se a solução funciona (seção 8 da proposta). */
+
 @Service
 public class IndicadoresBO {
 

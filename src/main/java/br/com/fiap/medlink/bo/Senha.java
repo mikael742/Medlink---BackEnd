@@ -6,10 +6,6 @@ import java.security.MessageDigest;
 import java.security.SecureRandom;
 import java.util.Base64;
 
-/**
- * Hash de senha com PBKDF2 (recurso nativo do Java, sem bibliotecas extras).
- * Cada usuário tem um salt aleatório, então senhas iguais geram hashes diferentes.
- */
 public final class Senha {
 
     private static final int ITERACOES = 65_536;

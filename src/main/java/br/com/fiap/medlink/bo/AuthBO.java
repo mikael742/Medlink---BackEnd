@@ -17,10 +17,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.time.Clock;
 import java.time.LocalDateTime;
 
-/**
- * Cadastro de contas e login. No cadastro, o paciente (ou a clínica) e o
- * usuário são criados na mesma transação: se um falhar, nada é gravado.
- */
+
 @Service
 public class AuthBO {
 
