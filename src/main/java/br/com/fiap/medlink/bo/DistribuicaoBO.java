@@ -29,11 +29,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-/**
- * Coração do Medlink: escolhe o método de distribuição conforme o tempo
- * restante até a consulta e envia a oferta da vaga ao candidato prioritário.
- * Garante que cada vaga tenha apenas uma oferta ativa por vez.
- */
 @Service
 public class DistribuicaoBO {
 
